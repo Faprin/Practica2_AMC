@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3181568b-50d8-46b8-89eb-fad67577b93e" name="Changes" comment="asd" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="FxmlFile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="2p2Jxs1J6R1eWSICr3gFSh36dis" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ControladorMenuPrincipal.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProbadorAlgoritmos.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jmdom/OneDrive - UNIVERSIDAD DE HUELVA/Universidad/3 AÑO/ALGORITMICA Y MODELOS DE COMPUTACIÓN/Prácticas/PRACTICA2 FX/Practica2&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jmdom\OneDrive - UNIVERSIDAD DE HUELVA\Universidad\3 AÑO\ALGORITMICA Y MODELOS DE COMPUTACIÓN\Prácticas\PRACTICA2 FX\Practica2\target\classes\Controlador" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jmdom\OneDrive - UNIVERSIDAD DE HUELVA\Universidad\3 AÑO\ALGORITMICA Y MODELOS DE COMPUTACIÓN\Prácticas\PRACTICA2 FX\Practica2\src\main\java\Controlador" />
+      <recent name="C:\Users\jmdom\OneDrive - UNIVERSIDAD DE HUELVA\Universidad\3 AÑO\ALGORITMICA Y MODELOS DE COMPUTACIÓN\Prácticas\PRACTICA2 FX\Practica2\src\main\resources\Controlador" />
+      <recent name="C:\Users\jmdom\IdeaProjects\Practica2\src\main\java\com\example\practica2" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3181568b-50d8-46b8-89eb-fad67577b93e" name="Changes" comment="" />
+      <created>1731958488761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1731958488761</updated>
+      <workItem from="1731958489763" duration="2972000" />
+      <workItem from="1732029055980" duration="388000" />
+      <workItem from="1732029484933" duration="2881000" />
+      <workItem from="1732053980982" duration="601000" />
+      <workItem from="1732104167327" duration="4199000" />
+      <workItem from="1732118755953" duration="62000" />
+      <workItem from="1732118872343" duration="8760000" />
+      <workItem from="1732128094195" duration="1141000" />
+      <workItem from="1732141198560" duration="3968000" />
+      <workItem from="1732145261412" duration="347000" />
+      <workItem from="1732145761505" duration="126000" />
+      <workItem from="1732186731376" duration="260000" />
+      <workItem from="1732187168220" duration="14000" />
+      <workItem from="1732187192002" duration="1644000" />
+      <workItem from="1732188862021" duration="93000" />
+      <workItem from="1732195887618" duration="1870000" />
+      <workItem from="1732201301513" duration="6000" />
+      <workItem from="1732201312865" duration="3210000" />
+      <workItem from="1732213781906" duration="1448000" />
+      <workItem from="1732261385559" duration="6000" />
+      <workItem from="1732261406087" duration="9519000" />
+      <workItem from="1732440131657" duration="362000" />
+      <workItem from="1732440513095" duration="8075000" />
+      <workItem from="1732470761608" duration="20000" />
+      <workItem from="1732470791071" duration="8113000" />
+      <workItem from="1732480567438" duration="601000" />
+      <workItem from="1732488861840" duration="4336000" />
+      <workItem from="1732650013466" duration="4088000" />
+      <workItem from="1732708937432" duration="16000" />
+      <workItem from="1732708968966" duration="18000" />
+      <workItem from="1732709007325" duration="2598000" />
+      <workItem from="1732783600837" duration="931000" />
+      <workItem from="1732790767565" duration="2153000" />
+      <workItem from="1732807368867" duration="3706000" />
+      <workItem from="1732823383294" duration="94000" />
+      <workItem from="1732898832011" duration="9000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asd" />
+    <option name="LAST_COMMIT_MESSAGE" value="asd" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

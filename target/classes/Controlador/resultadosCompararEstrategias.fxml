@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladorResultadosCompararEstrategias">
+   <children>
+      <TableView fx:id="tablaResultados" prefHeight="300.0" prefWidth="700.0">
+        <columns>
+          <TableColumn fx:id="columnaNombre" prefWidth="165.0" text="Algoritmo" />
+          <TableColumn fx:id="columnaDistancia" prefWidth="135.0" text="Distancia Mínima" />
+            <TableColumn fx:id="columnaCalculadas" minWidth="7.0" prefWidth="133.0" text="Calculadas" />
+            <TableColumn fx:id="columnaTiempo" minWidth="0.0" prefWidth="160.0" text="Tiempo (ms)" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>

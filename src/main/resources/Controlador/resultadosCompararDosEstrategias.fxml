@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladorResultadosCompararDosEstrategias">
+   <center>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1400.0">
+          <children>
+              <TableView fx:id="tablaResultados" prefHeight="400.0" prefWidth="1210.0">
+                  <columns>
+                      <TableColumn fx:id="columnaTalla" prefWidth="63.19999694824219" text="Talla" />
+                      <TableColumn fx:id="columnaCalculadas1" prefWidth="213.5999755859375" text="Calculadas 1" />
+                      <TableColumn fx:id="columnaTiempo1" prefWidth="263.1999816894531" text="Tiempos 1" />
+                      <TableColumn fx:id="columnaCalculadas2" prefWidth="312.7999267578125" text="Calculadas 2" />
+                      <TableColumn fx:id="columnaTiempo2" prefWidth="274.40008544921875" text="Tiempos 2" />
+                  </columns>
+              </TableView>
+          </children>
+      </HBox>
+   </center>
+   <left>
+        <VBox prefHeight="335.0" prefWidth="165.0" spacing="60.0" BorderPane.alignment="CENTER">
+            <children>
+                <CheckBox fx:id="exhaustivoUnidireccional" mnemonicParsing="false" text="Exhaustivo Unidireccional" />
+                <CheckBox fx:id="exhaustivoBidireccional" mnemonicParsing="false" text="Exhaustivo Bidireccional" />
+                <CheckBox fx:id="podaUnidireccional" mnemonicParsing="false" text="Poda Unidireccional" />
+                <CheckBox fx:id="podaBidireccional" mnemonicParsing="false" text="Poda Bidireccional" />
+            <Button fx:id="botonComparar" mnemonicParsing="false" onAction="#comparar" prefHeight="26.0" prefWidth="170.0" text="Comparar" />
+            </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </BorderPane.margin>
+        </VBox>
+   </left>
+</BorderPane>

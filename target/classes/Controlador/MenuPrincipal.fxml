@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladorMenuPrincipal">
+   <center>
+      <AnchorPane fx:id="contenedorPuntos" prefHeight="0.0" prefWidth="0.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <VBox fx:id="lateral" prefHeight="486.0" prefWidth="240.0" spacing="20.0" style="-fx-background-color: darkslateblue;" styleClass="lateral" BorderPane.alignment="CENTER">
+         <children>
+            <VBox>
+               <children>
+                  <Label fx:id="tituloPractica" text="PRACTICA 2" textFill="WHITE">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Separator prefWidth="200.0" />
+               </children>
+            </VBox>
+            <Button fx:id="generaDatasets" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#generarDatasetAleatorio" prefHeight="21.0" prefWidth="184.0" style="-fx-background-color: darkslateblue;" text="Generar dataset aleatorio" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="cargaDatasets" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#cargarDatasetEnMemoria" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: darkslateblue;" text="Cargar un dataset en memoria" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="comprobarEstrategias" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#comprobarEstrategias" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: darkslateblue;" text="Comprobar estrategias" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="compararEstrategias" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#compararEstrategias" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: darkslateblue;" text="Comparar estrategias" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonComprobarDosEstrategias" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#comprobarDosEstrategias" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: darkslateblue;" text="Comparar dos estrategias" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonVS" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#buttonVS" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: darkslateblue;" text="Unidireccional VS Bidireccional" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="selectorPuntoPartida" prefHeight="25.0" prefWidth="194.0" promptText="Punto de Partida" />
+            <ComboBox fx:id="selectorTrazaAlgoritmo" prefHeight="25.0" prefWidth="194.0" promptText="Seleccionar ALgoritmo" />
+            <Button fx:id="botonSalir" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#salir" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: darkslateblue;" text="Salir de la aplicación" textFill="WHITE">
+               <font>
+                  <Font size="13.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="200.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

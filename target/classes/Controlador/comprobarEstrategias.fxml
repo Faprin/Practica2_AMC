@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controlador.ControladorComprobarEstrategias">
+   <children>
+      <TableView fx:id="tabla" prefHeight="200.0" prefWidth="900.0">
+        <columns>
+          <TableColumn fx:id="talla" prefWidth="117.0" text="Talla" />
+          <TableColumn fx:id="exhaustivoUnidireccional" prefWidth="177.0" text="Exhaustivo Uidireccional (ms)" />
+            <TableColumn fx:id="exhaustivoBidireccional" prefWidth="199.0" text="Exhaustivo Bidireccional (ms)" />
+            <TableColumn fx:id="podaUnidireccional" prefWidth="203.0" text="Poda Unidireccional (ms)" />
+            <TableColumn fx:id="podaBidireccional" prefWidth="203.0" text="Poda Bidireccional (ms)" />
+        </columns>
+      </TableView>
+   </children>
+</VBox>
