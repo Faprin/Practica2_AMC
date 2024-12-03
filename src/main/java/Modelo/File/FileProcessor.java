@@ -80,11 +80,8 @@ public class FileProcessor {
     }
 
     public static void createAlgorithmFile(String algoritmo, ArrayList<Arista> aristas, double distancia, boolean esUnidireccional) {
-        // elegimos el nombre del fichero
-
-
         try {
-            String nomFichero = "ficherosEstrategias/" + algoritmo + ".dat";
+            String nomFichero = "ficherosEstrategias/" + algoritmo + ".tour";
             FileWriter fichero = new FileWriter(nomFichero);
 
             // escribimos las primras lineas

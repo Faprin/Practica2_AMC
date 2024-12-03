@@ -27,39 +27,39 @@
                   <Separator prefWidth="200.0" />
                </children>
             </VBox>
-            <Button fx:id="generaDatasets" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#generarDatasetAleatorio" prefHeight="21.0" prefWidth="184.0" style="-fx-background-color: darkslateblue;" text="Generar dataset aleatorio" textFill="WHITE">
+            <Button fx:id="generaDatasets" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#generarDatasetAleatorio" prefHeight="27.0" prefWidth="205.0" style="-fx-background-color: #3e3769;" text="Generar dataset aleatorio" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="cargaDatasets" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#cargarDatasetEnMemoria" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: darkslateblue;" text="Cargar un dataset en memoria" textFill="WHITE">
+            <Button fx:id="cargaDatasets" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#cargarDatasetEnMemoria" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: #3e3769;" text="Cargar un dataset en memoria" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="comprobarEstrategias" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#comprobarEstrategias" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: darkslateblue;" text="Comprobar estrategias" textFill="WHITE">
+            <Button fx:id="comprobarEstrategias" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#comprobarEstrategias" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: #3e3769;" text="Comprobar estrategias" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="compararEstrategias" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#compararEstrategias" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: darkslateblue;" text="Comparar estrategias" textFill="WHITE">
+            <Button fx:id="compararEstrategias" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#compararEstrategias" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: #3e3769;" text="Comparar estrategias" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="buttonComprobarDosEstrategias" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#comprobarDosEstrategias" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: darkslateblue;" text="Comparar dos estrategias" textFill="WHITE">
+            <Button fx:id="buttonComprobarDosEstrategias" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#comprobarDosEstrategias" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: #3e3769;" text="Comparar dos estrategias" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button fx:id="buttonVS" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#buttonVS" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: darkslateblue;" text="Unidireccional VS Bidireccional" textFill="WHITE">
+            <Button fx:id="buttonVS" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#buttonVS" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: #3e3769;" text="Unidireccional VS Bidireccional" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>
             </Button>
             <ComboBox fx:id="selectorPuntoPartida" prefHeight="25.0" prefWidth="194.0" promptText="Punto de Partida" />
             <ComboBox fx:id="selectorTrazaAlgoritmo" prefHeight="25.0" prefWidth="194.0" promptText="Seleccionar ALgoritmo" />
-            <Button fx:id="botonSalir" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#salir" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: darkslateblue;" text="Salir de la aplicación" textFill="WHITE">
+            <Button fx:id="botonSalir" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#salir" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: #3e3769;" text="Salir de la aplicación" textFill="WHITE">
                <font>
                   <Font size="13.0" />
                </font>

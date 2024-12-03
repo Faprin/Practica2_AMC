@@ -177,23 +177,39 @@ public class ControladorMenuPrincipal extends Application {
         if (contenedorPuntos != null) {
             contenedorPuntos.getChildren().clear();
 
+            double ancho = contenedorPuntos.getWidth();
+            double alto = contenedorPuntos.getHeight();
+
+            Dimensionado dimensionado = new Dimensionado(ancho, alto, puntos);
+
             for (Punto p : puntos) {
-                contenedorPuntos.getChildren().add(new Circle(p.getX(), p.getY(), radio, Color.RED));
+                Punto redimensionado = dimensionado.redimensionar(p);
+                contenedorPuntos.getChildren().add(new Circle(redimensionado.getX(), redimensionado.getY(), radio, Color.RED));
             }
         }
     }
 
+
     public void repaintSolucion() {
         if (contenedorPuntos != null) {
             repaintPuntos();
+
+            double ancho = contenedorPuntos.getWidth();
+            double alto = contenedorPuntos.getHeight();
+
+            if (ancho == 0 || alto == 0) {
+                return; // Evitar división por cero
+            }
+
+            Dimensionado dimensionado = new Dimensionado(ancho, alto, puntos);
 
             var puntos = resultado.get().getAristas();
 
             boolean primeraIter = true;
 
             for (Arista a : puntos) {
-                Punto origen = a.getOrigen();
-                Punto destino = a.getDestino();
+                Punto origen = dimensionado.redimensionar(a.getOrigen());
+                Punto destino = dimensionado.redimensionar(a.getDestino());
 
                 if (primeraIter) {
                     Circle circle = new Circle(origen.getX(), origen.getY(), radio + 4, Color.GREEN);
@@ -209,7 +225,6 @@ public class ControladorMenuPrincipal extends Application {
                 double tamanio = 8;
                 double angulo = Math.atan2(destino.getY() - origen.getY(), destino.getX() - origen.getX());
 
-
                 double puntoMedioX = (origen.getX() + destino.getX()) / 2;
                 double puntoMedioY = (origen.getY() + destino.getY()) / 2;
 
@@ -224,17 +239,14 @@ public class ControladorMenuPrincipal extends Application {
                 double y2 = destino.getY() - tamanio * Math.sin(angulo + Math.PI / 6);
 
                 Polygon arrowHead = new Polygon();
-                arrowHead.getPoints().addAll(
-                        destino.getX(), destino.getY(),
-                        x1, y1,
-                        x2, y2
-                );
+                arrowHead.getPoints().addAll(destino.getX(), destino.getY(), x1, y1, x2, y2);
                 arrowHead.setFill(Color.BLACK);
 
                 contenedorPuntos.getChildren().add(arrowHead);
             }
         }
     }
+
 
     @FXML
     public void generarDatasetAleatorio() {
@@ -303,7 +315,7 @@ public class ControladorMenuPrincipal extends Application {
                 }
                 case "Poda Unidireccional" -> {
                     ArrayList<Punto> cp = new ArrayList<>(new ArrayList<>(puntos));
-                    Algoritmos.quickSort(cp, 'x');
+                    // Algoritmos.quickSort(cp, 'x');
                     pintar = Algoritmos.podaUnidireccional(cp);
                     color = Color.ORANGE;
                 }
@@ -313,7 +325,7 @@ public class ControladorMenuPrincipal extends Application {
                 }
                 case "Poda Bidireccional" -> {
                     ArrayList<Punto> cp = new ArrayList<>(new ArrayList<>(puntos));
-                    Algoritmos.quickSort(cp, 'x');
+                   // Algoritmos.quickSort(cp, 'x');
                     pintar = Algoritmos.podaBidireccional(cp);
                     color = Color.YELLOW;
                 }
@@ -346,8 +358,6 @@ public class ControladorMenuPrincipal extends Application {
 
     @FXML
     public void comprobarDosEstrategias() {
-        // me voy a centrar por ahora en el resultado, para ello abrire un nuevo scene
-
         try {
             ControladorResultadosCompararDosEstrategias.setPuntos(new ArrayList<>(puntos));
             FXMLLoader fxmlLoader = new FXMLLoader(ControladorMenuPrincipal.class.getResource("resultadosCompararDosEstrategias.fxml"));
@@ -366,7 +376,7 @@ public class ControladorMenuPrincipal extends Application {
         // voy a subdelegarlo a la clase del controlador para mostrar las operaciones
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(ControladorMenuPrincipal.class.getResource("comprobarEstrategias.fxml"));
-            Scene scene = new Scene(fxmlLoader.load(), 900, 200);
+            Scene scene = new Scene(fxmlLoader.load(), 1050, 200);
             Stage stage = new Stage();
             stage.setScene(scene);
             stage.show();
