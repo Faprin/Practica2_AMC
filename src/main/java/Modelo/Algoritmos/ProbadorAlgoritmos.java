@@ -45,6 +45,5 @@ public class ProbadorAlgoritmos {
                 Algoritmos.getCalculadas());
 
 
-
     }
 }

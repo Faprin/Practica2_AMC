@@ -315,7 +315,6 @@ public class ControladorMenuPrincipal extends Application {
                 }
                 case "Poda Unidireccional" -> {
                     ArrayList<Punto> cp = new ArrayList<>(new ArrayList<>(puntos));
-                    // Algoritmos.quickSort(cp, 'x');
                     pintar = Algoritmos.podaUnidireccional(cp);
                     color = Color.ORANGE;
                 }
@@ -325,7 +324,6 @@ public class ControladorMenuPrincipal extends Application {
                 }
                 case "Poda Bidireccional" -> {
                     ArrayList<Punto> cp = new ArrayList<>(new ArrayList<>(puntos));
-                   // Algoritmos.quickSort(cp, 'x');
                     pintar = Algoritmos.podaBidireccional(cp);
                     color = Color.YELLOW;
                 }

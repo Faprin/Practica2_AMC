@@ -105,6 +105,7 @@ public class Algoritmos {
         Punto ciudadActual = ciudades.get(Algoritmos.getCiudadPartida());
         ciudadesVisitadas.add(ciudadActual);
 
+        Algoritmos.quickSort(ciudades, 'x');
 
         while (ciudadesVisitadas.size() < ciudades.size()) {
             double minDistance = Double.MAX_VALUE;
@@ -118,7 +119,7 @@ public class Algoritmos {
                             minDistance = dist;
                             ciudadDestino = destino;
                         }
-                    }
+                    } else break;
                 }
             }
             // hago la elección y vuelvo a iterar
@@ -157,6 +158,8 @@ public class Algoritmos {
         Punto ciudadActualIzq = ciudades.get(Algoritmos.getCiudadPartida());
         Punto ciudadActualDer = ciudades.get(Algoritmos.getCiudadPartida());
 
+        Algoritmos.quickSort(ciudades, 'x');
+
         while (ciudadesVisitadas.size() < ciudades.size()) {
             // buscamos unidireccionalmente y lo dejamos en extremo de la derecna
             double minDistanceDer = Double.MAX_VALUE, minDistanceIzq = Double.MAX_VALUE;
@@ -169,7 +172,7 @@ public class Algoritmos {
                     if (dist < minDistanceDer) {
                         minDistanceDer = dist;
                         destinoDer = destino;
-                    }
+                    } else break;
                 } else {
                     // comienza la búsqueda bidireccional
                     if (!ciudadesVisitadas.contains(destino)) {
