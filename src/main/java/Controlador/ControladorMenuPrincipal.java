@@ -205,7 +205,7 @@ public class ControladorMenuPrincipal extends Application {
 
             var puntos = resultado.get().getAristas();
 
-            boolean primeraIter = true;
+            boolean primeraIter = true; // TODO -> Corregir esto porque no pinta correctamente el primer punto
 
             for (Arista a : puntos) {
                 Punto origen = dimensionado.redimensionar(a.getOrigen());
@@ -306,6 +306,8 @@ public class ControladorMenuPrincipal extends Application {
                 throw new Exception("Por favor, seleccione un algoritmo para represetnar su traza");
             }
 
+            Algoritmos.setCiudadPartida(puntos.size());
+
             // seleccion de la traza que el usuario desea visualizar
             Resultado pintar;
             switch (algoritmoVisualizar) {
@@ -314,8 +316,7 @@ public class ControladorMenuPrincipal extends Application {
                     color = Color.BLUE;
                 }
                 case "Poda Unidireccional" -> {
-                    ArrayList<Punto> cp = new ArrayList<>(new ArrayList<>(puntos));
-                    pintar = Algoritmos.podaUnidireccional(cp);
+                    pintar = Algoritmos.podaUnidireccional(new ArrayList<>(puntos));
                     color = Color.ORANGE;
                 }
                 case "Exhaustivo Bidireccional" -> {
@@ -323,8 +324,7 @@ public class ControladorMenuPrincipal extends Application {
                     color = Color.PURPLE;
                 }
                 case "Poda Bidireccional" -> {
-                    ArrayList<Punto> cp = new ArrayList<>(new ArrayList<>(puntos));
-                    pintar = Algoritmos.podaBidireccional(cp);
+                    pintar = Algoritmos.podaBidireccional(new ArrayList<>(puntos));
                     color = Color.YELLOW;
                 }
                 default -> {

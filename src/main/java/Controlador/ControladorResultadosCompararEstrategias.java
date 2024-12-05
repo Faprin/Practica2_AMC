@@ -47,9 +47,10 @@ public class ControladorResultadosCompararEstrategias implements Initializable {
         columnaDistancia.setCellValueFactory(stablerResultant -> new SimpleObjectProperty<>(stablerResultant.getValue().getDistancia()));
         columnaNombre.setCellValueFactory(stablerResultant -> new SimpleObjectProperty<>(stablerResultant.getValue().getNombre()));
         columnaTiempo.setCellValueFactory(stablerResultant -> new SimpleObjectProperty<>(stablerResultant.getValue().getTiempo()));
-        Algoritmos.setCiudadPartida(puntos.size());
+
         resultados.clear();
 
+        Algoritmos.setCiudadPartida(puntos.size());
         Resultado r1 = Algoritmos.exhaustivoUnidireccional(new ArrayList<Punto>(puntos));
         resultados.add(r1);
         FileProcessor.createAlgorithmFile("exhaustivoUnidireccional", r1.getAristas(), Algoritmos.getDistanciaTotal(), true);

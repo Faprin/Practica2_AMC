@@ -96,8 +96,8 @@ public class Algoritmos {
     }
 
     public static Resultado podaUnidireccional(ArrayList<Punto> ciudades) {
-        double start = System.nanoTime();
         Algoritmos.setParameters();
+        double start = System.nanoTime();
 
         ArrayList<Punto> ciudadesVisitadas = new ArrayList<>();
         ArrayList<Arista> rutaAristas = new ArrayList<>();
@@ -119,7 +119,7 @@ public class Algoritmos {
                             minDistance = dist;
                             ciudadDestino = destino;
                         }
-                    } else break;
+                    } // else break;
                 }
             }
             // hago la elección y vuelvo a iterar
@@ -158,8 +158,6 @@ public class Algoritmos {
         Punto ciudadActualIzq = ciudades.get(Algoritmos.getCiudadPartida());
         Punto ciudadActualDer = ciudades.get(Algoritmos.getCiudadPartida());
 
-        Algoritmos.quickSort(ciudades, 'x');
-
         while (ciudadesVisitadas.size() < ciudades.size()) {
             // buscamos unidireccionalmente y lo dejamos en extremo de la derecna
             double minDistanceDer = Double.MAX_VALUE, minDistanceIzq = Double.MAX_VALUE;
@@ -172,7 +170,7 @@ public class Algoritmos {
                     if (dist < minDistanceDer) {
                         minDistanceDer = dist;
                         destinoDer = destino;
-                    } else break;
+                    }
                 } else {
                     // comienza la búsqueda bidireccional
                     if (!ciudadesVisitadas.contains(destino)) {
@@ -244,6 +242,8 @@ public class Algoritmos {
 
         Punto ciudadActualIzq = ciudades.get(Algoritmos.getCiudadPartida());
         Punto ciudadActualDer = ciudades.get(Algoritmos.getCiudadPartida());
+
+        Algoritmos.quickSort(ciudades, 'x');
 
         while (ciudadesVisitadas.size() < ciudades.size()) {
             // buscamos unidireccionalmente y lo dejamos en extremo de la derecna
