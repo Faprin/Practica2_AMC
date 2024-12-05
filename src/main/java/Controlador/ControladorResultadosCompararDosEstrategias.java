@@ -68,7 +68,7 @@ public class ControladorResultadosCompararDosEstrategias implements Initializabl
         columnaCalculadas2.setCellValueFactory(stableResultant -> new SimpleObjectProperty<>(stableResultant.getValue().getCalculadas2()));
         columnaTiempo1.setCellValueFactory(stableResultant -> new SimpleObjectProperty<>(stableResultant.getValue().getTiempo1()));
         columnaTiempo2.setCellValueFactory(stableResultant -> new SimpleObjectProperty<>(stableResultant.getValue().getTiempo2()));
-        Algoritmos.setCiudadPartida(puntos.size());
+        // Algoritmos.setCiudadPartida(puntos.size());
     }
 
     public void comparar() {

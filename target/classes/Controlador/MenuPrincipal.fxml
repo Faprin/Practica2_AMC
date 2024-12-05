@@ -58,7 +58,7 @@
                </font>
             </Button>
             <ComboBox fx:id="selectorPuntoPartida" prefHeight="25.0" prefWidth="194.0" promptText="Punto de Partida" />
-            <ComboBox fx:id="selectorTrazaAlgoritmo" prefHeight="25.0" prefWidth="194.0" promptText="Seleccionar ALgoritmo" />
+            <ComboBox fx:id="selectorTrazaAlgoritmo" prefHeight="25.0" prefWidth="194.0" promptText="Seleccionar traza del Algoritmo" />
             <Button fx:id="botonSalir" alignment="BOTTOM_LEFT" mnemonicParsing="false" onAction="#salir" prefHeight="27.0" prefWidth="200.0" style="-fx-background-color: #3e3769;" text="Salir de la aplicación" textFill="WHITE">
                <font>
                   <Font size="13.0" />

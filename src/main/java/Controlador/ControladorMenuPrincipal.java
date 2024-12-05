@@ -205,16 +205,13 @@ public class ControladorMenuPrincipal extends Application {
 
             var puntos = resultado.get().getAristas();
 
-            boolean primeraIter = true; // TODO -> Corregir esto porque no pinta correctamente el primer punto
-
             for (Arista a : puntos) {
                 Punto origen = dimensionado.redimensionar(a.getOrigen());
                 Punto destino = dimensionado.redimensionar(a.getDestino());
 
-                if (primeraIter) {
+                if(origen.getId() == Algoritmos.getCiudadPartida()+1) {
                     Circle circle = new Circle(origen.getX(), origen.getY(), radio + 4, Color.GREEN);
                     contenedorPuntos.getChildren().add(circle);
-                    primeraIter = false;
                 }
 
                 Line line = new Line(origen.getX(), origen.getY(), destino.getX(), destino.getY());
