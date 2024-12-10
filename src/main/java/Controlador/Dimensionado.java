@@ -28,7 +28,7 @@ public class Dimensionado {
         double escalaX = ancho / maxX;
         double escalaY = alto / maxY;
 
-        this.escala = Math.min(escalaX, escalaY); // Mantener proporciones
+        this.escala = Math.min(escalaX, escalaY);
     }
 
     public Punto redimensionar(Punto punto) {

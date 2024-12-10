@@ -46,8 +46,6 @@ public class ControladorMenuPrincipal extends Application {
         puntos.setAll(FileProcessor.reader(path));
     }
 
-    public static int iterator = 0;
-
     private void inicializarListeners() {
         puntos.addListener(new ListChangeListener<Punto>() {
             @Override
@@ -104,7 +102,7 @@ public class ControladorMenuPrincipal extends Application {
 
     @FXML
     public void initialize() {
-
+        // INICIALIZAR LA PANTALLA INICIAL
         contenedorPuntos.getChildren().clear();
         Text t1 = new Text(50, 50, "PRÁCTICA 2 AMC. Jose Manuel Domínguez Segura");
         t1.setFont(new Font(23));
@@ -114,19 +112,17 @@ public class ControladorMenuPrincipal extends Application {
         t2.setFont(new Font(15));
         contenedorPuntos.getChildren().addAll(t1, t2);
 
-        selectorPuntoPartida.setItems(FXCollections.observableArrayList("Auto", "Seleccionar..."));
 
         // COMBOBOX SELECTOR DE PUNTO DE PARTIDA
+        selectorPuntoPartida.setItems(FXCollections.observableArrayList("Auto", "Seleccionar..."));
         selectorPuntoPartida.setOnAction(event -> {
             String selected = selectorPuntoPartida.getValue();
             if ("Seleccionar...".equals(selected)) {
-                // Crear un cuadro de diálogo para el input del usuario
                 TextInputDialog dialog = new TextInputDialog();
                 dialog.setTitle("Seleccionar punto de partida");
                 dialog.setHeaderText("Introduce el número del punto de partida:");
                 dialog.setContentText("Número:");
 
-                // Mostrar el diálogo y capturar la entrada
                 Optional<String> result = dialog.showAndWait();
                 result.ifPresentOrElse(input -> {
                     try {
@@ -135,7 +131,7 @@ public class ControladorMenuPrincipal extends Application {
                             throw new NumberFormatException();
                         }
 
-                        System.out.println("Número seleccionado: " + inicio); // Verificación en consola
+                        System.out.println("Número seleccionado: " + inicio);
                         Algoritmos.setPuntoPartida(inicio);
 
                         String nuevoValor = "Inicio: " + inicio;
@@ -198,7 +194,7 @@ public class ControladorMenuPrincipal extends Application {
             double alto = contenedorPuntos.getHeight();
 
             if (ancho == 0 || alto == 0) {
-                return; // Evitar división por cero
+                return;
             }
 
             Dimensionado dimensionado = new Dimensionado(ancho, alto, puntos);
@@ -243,7 +239,6 @@ public class ControladorMenuPrincipal extends Application {
             }
         }
     }
-
 
     @FXML
     public void generarDatasetAleatorio() {
@@ -349,7 +344,6 @@ public class ControladorMenuPrincipal extends Application {
             alert.showAndWait();
         }
     }
-
 
     @FXML
     public void comprobarDosEstrategias() {
