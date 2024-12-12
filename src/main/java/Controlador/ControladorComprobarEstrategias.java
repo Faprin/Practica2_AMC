@@ -119,6 +119,7 @@ public class ControladorComprobarEstrategias implements Initializable {
             for (int j = 0; j < 10; j++) {
                 ArrayList<Punto> dataset = ControladorMenuPrincipal.generaDatasetPorTalla(i);
                 // ejecutar todos los algoritmos y tomar tiempos
+                Algoritmos.setCiudadPartida(dataset.size());
                 resultado = Algoritmos.exhaustivoUnidireccional(new ArrayList<>(dataset));
                 exhaustivoUnidireccional += resultado.getTiempo();
 

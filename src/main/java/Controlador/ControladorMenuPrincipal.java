@@ -264,7 +264,7 @@ public class ControladorMenuPrincipal extends Application {
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Cargar dataset en memoria");
 
-        fileChooser.setInitialDirectory(new File("C:\\Users\\jmdom\\OneDrive - UNIVERSIDAD DE HUELVA\\Universidad\\3 AÑO\\ALGORITMICA Y MODELOS DE COMPUTACIÓN\\Prácticas\\PRACTICA2 FX\\Practica2\\datasets"));
+        fileChooser.setInitialDirectory(new File("datasets/"));
         fileChooser.getExtensionFilters().addAll(new FileChooser.ExtensionFilter("Fichero tsp", "*.tsp"));
 
         File ficheroSeleccionado = fileChooser.showOpenDialog(null);
